@@ -14,7 +14,8 @@ Google Fonts (Poppins + Inter)
 
 Getting Started
 
-bashgit clone https://github.com/your-username/nexashop.git
+bashgit clone https://github.com/khuzaimah05/ICT-Project-.git
+live link 
 cd nexashop
 open index.html
 
