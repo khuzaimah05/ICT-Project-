@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+       META & SEO
+  ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NexaShop — Premium products, unbeatable prices. Shop electronics, fashion, home & more." />
+  <meta name="keywords" content="ecommerce, online store, shop, electronics, fashion, deals" />
+  <title>NexaShop — Premium E-Commerce Store</title>
+
+  <!-- ============================================================
+       EXTERNAL FONTS & ICONS
+  ============================================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome 6 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       TOP HEADER BAR
+  ============================================================ -->
+  <div id="top-header">
+    <div class="container-fluid px-4">
+      <div class="row align-items-center">
+
+        <!-- Contact Info -->
+        <div class="col-lg-4 col-md-5 d-none d-md-flex gap-3 top-contact">
+          <a href="tel:+18001234567"><i class="fas fa-phone-volume"></i> +1 800 123 4567</a>
+          <a href="mailto:hello@nexashop.com"><i class="fas fa-envelope"></i> hello@nexashop.com</a>
+        </div>
+
+        <!-- Shipping Announcement -->
+        <div class="col-lg-4 col-md-2 col-12 text-center top-announce">
+          <span><i class="fas fa-truck-fast me-1"></i> Free Shipping on Orders Over $50 &nbsp;|&nbsp; <strong>Use Code: NEXA20</strong></span>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="col-lg-4 col-md-5 d-flex justify-content-end gap-2 top-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       MAIN NAVIGATION
+  ============================================================ -->
+  <nav class="navbar navbar-expand-lg sticky-top" id="main-nav" aria-label="Main navigation">
+    <div class="container-fluid px-4">
+
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html" aria-label="NexaShop Home">
+        <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+        <span class="logo-text">Nexa<span class="logo-accent">Shop</span></span>
+      </a>
+
+      <!-- Mobile: Cart + Hamburger -->
+      <div class="d-flex align-items-center gap-3 d-lg-none">
+        <a href="#" class="nav-icon-btn cart-trigger" aria-label="Cart">
+          <i class="fas fa-cart-shopping"></i>
+          <span class="cart-badge" id="cart-count">3</span>
+        </a>
+        <button class="hamburger-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto gap-1">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#categories" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+            <ul class="dropdown-menu mega-menu">
+              <li><a class="dropdown-item" href="#"><i class="fas fa-mobile-screen me-2"></i>Electronics</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-shirt me-2"></i>Fashion</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-couch me-2"></i>Home & Living</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-dumbbell me-2"></i>Sports & Fitness</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-face-smile me-2"></i>Beauty & Care</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-gamepad me-2"></i>Gaming</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#featured">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Search + Actions -->
+        <div class="nav-actions d-flex align-items-center gap-3">
+          <!-- Search -->
+          <div class="nav-search">
+            <input type="search" placeholder="Search products…" aria-label="Search products" id="nav-search-input" />
+            <button aria-label="Submit search"><i class="fas fa-magnifying-glass"></i></button>
+          </div>
+
+          <!-- Wishlist -->
+          <a href="#" class="nav-icon-btn d-none d-lg-flex" aria-label="Wishlist">
+            <i class="far fa-heart"></i>
+            <span class="nav-icon-badge">5</span>
+          </a>
+
+          <!-- Cart -->
+          <a href="#" class="nav-icon-btn cart-trigger d-none d-lg-flex" aria-label="Shopping Cart">
+            <i class="fas fa-cart-shopping"></i>
+            <span class="cart-badge" id="cart-count-desk">3</span>
+          </a>
+
+          <!-- Account -->
+          <a href="#" class="nav-icon-btn d-none d-lg-flex" aria-label="User Account">
+            <i class="far fa-circle-user"></i>
+          </a>
+        </div>
+      </div><!-- /navMenu -->
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section id="hero" aria-label="Hero banner">
+    <!-- Decorative slash -->
+    <div class="hero-slash" aria-hidden="true"></div>
+
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row align-items-center min-vh-85 g-5">
+
+        <!-- Hero Copy -->
+        <div class="col-lg-6 col-xl-5 hero-copy" data-aos="fade-right">
+          <span class="hero-eyebrow"><i class="fas fa-fire-flame-curved me-1"></i> Summer 2026 Collection</span>
+          <h1 class="hero-headline">Elevate Your <span class="hero-highlight">Style</span> &amp; Life</h1>
+          <p class="hero-sub">Premium products curated for people who demand the best. Fast shipping, easy returns, and prices that respect your wallet.</p>
+
+          <div class="hero-stats d-flex gap-4 mb-5">
+            <div class="hero-stat"><strong>50K+</strong><span>Products</span></div>
+            <div class="hero-stat"><strong>2M+</strong><span>Customers</span></div>
+            <div class="hero-stat"><strong>4.9★</strong><span>Rating</span></div>
+          </div>
+
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#shop" class="btn btn-primary-nexa btn-lg">Shop Now <i class="fas fa-arrow-right ms-2"></i></a>
+            <a href="#offers" class="btn btn-outline-nexa btn-lg">View Deals</a>
+          </div>
+        </div>
+
+        <!-- Hero Visual -->
+        <div class="col-lg-6 col-xl-7 d-none d-lg-block hero-visual" data-aos="fade-left">
+          <div class="hero-card-grid">
+            <!-- Floating product showcase cards -->
+            <div class="hc hc-main">
+              <div class="hc-img-wrap">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80" alt="Premium smartwatch on display" loading="eager" />
+              </div>
+              <div class="hc-info">
+                <span class="hc-label">Best Seller</span>
+                <p class="hc-name">ProPulse SmartWatch X9</p>
+                <p class="hc-price">$249 <s>$399</s></p>
+              </div>
+            </div>
+
+            <div class="hc hc-sm hc-top">
+              <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=300&q=80" alt="Wireless headphones" loading="eager" />
+              <span>SoundBlast ANC</span>
+              <strong>$129</strong>
+            </div>
+
+            <div class="hc hc-sm hc-bot">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300&q=80" alt="Trendy sneakers" loading="eager" />
+              <span>AeroStep Runner</span>
+              <strong>$89</strong>
+            </div>
+
+            <!-- Floating badge -->
+            <div class="hero-badge-float">
+              <i class="fas fa-tag"></i> Up to 60% OFF
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CATEGORIES SECTION
+  ============================================================ -->
+  <section id="categories" class="section-pad" aria-labelledby="cat-heading">
+    <div class="container-fluid px-4 px-lg-5">
+
+      <div class="section-header text-center mb-5">
+        <span class="section-eyebrow">Browse by</span>
+        <h2 id="cat-heading" class="section-title">Shop Categories</h2>
+        <p class="section-sub">Find exactly what you're looking for across our curated collections.</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+
+        <!-- Category Card Macro -->
+        <div class="col-6 col-sm-4 col-lg-2">
+          <a href="#" class="cat-card" aria-label="Electronics">
+            <div class="cat-icon-wrap" style="--cat-color:#4F46E5">
+              <i class="fas fa-mobile-screen-button"></i>
+            </div>
+            <span class="cat-name">Electronics</span>
+            <span class="cat-count">1,240 items</span>
+          </a>
+        </div>
+
+        <div class="col-6 col-sm-4 col-lg-2">
+          <a href="#" class="cat-card" aria-label="Fashion">
+            <div class="cat-icon-wrap" style="--cat-color:#EC4899">
+              <i class="fas fa-shirt"></i>
+            </div>
+            <span class="cat-name">Fashion</span>
+            <span class="cat-count">3,580 items</span>
+          </a>
+        </div>
+
+        <div class="col-6 col-sm-4 col-lg-2">
+          <a href="#" class="cat-card" aria-label="Home & Living">
+            <div class="cat-icon-wrap" style="--cat-color:#10B981">
+              <i class="fas fa-couch"></i>
+            </div>
+            <span class="cat-name">Home & Living</span>
+            <span class="cat-count">2,100 items</span>
+          </a>
+        </div>
+
+        <div class="col-6 col-sm-4 col-lg-2">
+          <a href="#" class="cat-card" aria-label="Sports & Fitness">
+            <div class="cat-icon-wrap" style="--cat-color:#F59E0B">
+              <i class="fas fa-dumbbell"></i>
+            </div>
+            <span class="cat-name">Sports</span>
+            <span class="cat-count">890 items</span>
+          </a>
+        </div>
+
+        <div class="col-6 col-sm-4 col-lg-2">
+          <a href="#" class="cat-card" aria-label="Beauty & Care">
+            <div class="cat-icon-wrap" style="--cat-color:#8B5CF6">
+              <i class="fas fa-spa"></i>
+            </div>
+            <span class="cat-name">Beauty</span>
+            <span class="cat-count">670 items</span>
+          </a>
+        </div>
+
+        <div class="col-6 col-sm-4 col-lg-2">
+          <a href="#" class="cat-card" aria-label="Gaming">
+            <div class="cat-icon-wrap" style="--cat-color:#EF4444">
+              <i class="fas fa-gamepad"></i>
+            </div>
+            <span class="cat-name">Gaming</span>
+            <span class="cat-count">420 items</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FEATURED PRODUCTS SECTION
+  ============================================================ -->
+  <section id="featured" class="section-pad section-alt" aria-labelledby="feat-heading">
+    <div class="container-fluid px-4 px-lg-5">
+
+      <div class="section-header d-flex flex-wrap align-items-end justify-content-between mb-5 gap-3">
+        <div>
+          <span class="section-eyebrow">Handpicked for you</span>
+          <h2 id="feat-heading" class="section-title mb-0">Featured Products</h2>
+        </div>
+        <div class="filter-pills d-flex flex-wrap gap-2">
+          <button class="pill active" data-filter="all">All</button>
+          <button class="pill" data-filter="electronics">Electronics</button>
+          <button class="pill" data-filter="fashion">Fashion</button>
+          <button class="pill" data-filter="home">Home</button>
+          <button class="pill" data-filter="sports">Sports</button>
+        </div>
+      </div>
+
+      <div class="row g-4" id="products-grid">
+
+        <!-- ── Product Card Template (reused throughout) ── -->
+
+        <!-- 1 -->
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 product-item" data-cat="electronics">
+          <article class="product-card" aria-label="ProPulse SmartWatch X9">
+            <div class="pc-img-wrap">
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80" alt="ProPulse SmartWatch X9" loading="lazy" />
+              <span class="pc-badge badge-hot">HOT</span>
+              <div class="pc-actions">
+                <button class="pc-action-btn wishlist-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
+                <button class="pc-action-btn quickview-btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="far fa-eye"></i></button>
+                <button class="pc-action-btn compare-btn" aria-label="Compare"><i class="fas fa-shuffle"></i></button>
+              </div>
+            </div>
+            <div class="pc-body">
+              <span class="pc-category">Electronics</span>
+              <h3 class="pc-name"><a href="#">ProPulse SmartWatch X9</a></h3>
+              <div class="pc-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i>
+                <span>(1,204)</span>
+              </div>
+              <div class="pc-price-row">
+                <span class="pc-price">$249.00</span>
+                <span class="pc-old-price">$399.00</span>
+                <span class="pc-discount">-38%</span>
+              </div>
+              <button class="btn btn-cart w-100 mt-2" onclick="addToCart(this)">
+                <i class="fas fa-cart-plus me-2"></i> Add to Cart
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- 2 -->
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 product-item" data-cat="electronics">
+          <article class="product-card" aria-label="SoundBlast ANC Pro">
+            <div class="pc-img-wrap">
+              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80" alt="SoundBlast ANC Pro Headphones" loading="lazy" />
+              <span class="pc-badge badge-new">NEW</span>
+              <div class="pc-actions">
+                <button class="pc-action-btn wishlist-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
+                <button class="pc-action-btn quickview-btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="far fa-eye"></i></button>
+                <button class="pc-action-btn compare-btn" aria-label="Compare"><i class="fas fa-shuffle"></i></button>
+              </div>
+            </div>
+            <div class="pc-body">
+              <span class="pc-category">Electronics</span>
+              <h3 class="pc-name"><a href="#">SoundBlast ANC Pro</a></h3>
+              <div class="pc-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span>(876)</span>
+              </div>
+              <div class="pc-price-row">
+                <span class="pc-price">$129.00</span>
+                <span class="pc-old-price">$199.00</span>
+                <span class="pc-discount">-35%</span>
+              </div>
+              <button class="btn btn-cart w-100 mt-2" onclick="addToCart(this)">
+                <i class="fas fa-cart-plus me-2"></i> Add to Cart
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- 3 -->
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 product-item" data-cat="fashion">
+          <article class="product-card" aria-label="AeroStep Runner V3">
+            <div class="pc-img-wrap">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80" alt="AeroStep Runner V3 Sneakers" loading="lazy" />
+              <div class="pc-actions">
+                <button class="pc-action-btn wishlist-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
+                <button class="pc-action-btn quickview-btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="far fa-eye"></i></button>
+                <button class="pc-action-btn compare-btn" aria-label="Compare"><i class="fas fa-shuffle"></i></button>
+              </div>
+            </div>
+            <div class="pc-body">
+              <span class="pc-category">Fashion</span>
+              <h3 class="pc-name"><a href="#">AeroStep Runner V3</a></h3>
+              <div class="pc-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                <span>(542)</span>
+              </div>
+              <div class="pc-price-row">
+                <span class="pc-price">$89.00</span>
+                <span class="pc-old-price">$140.00</span>
+                <span class="pc-discount">-36%</span>
+              </div>
+              <button class="btn btn-cart w-100 mt-2" onclick="addToCart(this)">
+                <i class="fas fa-cart-plus me-2"></i> Add to Cart
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- 4 -->
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 product-item" data-cat="electronics">
+          <article class="product-card" aria-label="PixelCam Pro 4K">
+            <div class="pc-img-wrap">
+              <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=500&q=80" alt="PixelCam Pro 4K Camera" loading="lazy" />
+              <span class="pc-badge badge-sale">SALE</span>
+              <div class="pc-actions">
+                <button class="pc-action-btn wishlist-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
+                <button class="pc-action-btn quickview-btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="far fa-eye"></i></button>
+                <button class="pc-action-btn compare-btn" aria-label="Compare"><i class="fas fa-shuffle"></i></button>
+              </div>
+            </div>
+            <div class="pc-body">
+              <span class="pc-category">Electronics</span>
+              <h3 class="pc-name"><a href="#">PixelCam Pro 4K</a></h3>
+              <div class="pc-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i>
+                <span>(329)</span>
+              </div>
+              <div class="pc-price-row">
+                <span class="pc-price">$699.00</span>
+                <span class="pc-old-price">$999.00</span>
+                <span class="pc-discount">-30%</span>
+              </div>
+              <button class="btn btn-cart w-100 mt-2" onclick="addToCart(this)">
+                <i class="fas fa-cart-plus me-2"></i> Add to Cart
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- 5 -->
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 product-item" data-cat="home">
+          <article class="product-card" aria-label="LumiGlow Smart Lamp">
+            <div class="pc-img-wrap">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80" alt="LumiGlow Smart LED Lamp" loading="lazy" />
+              <span class="pc-badge badge-new">NEW</span>
+              <div class="pc-actions">
+                <button class="pc-action-btn wishlist-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
+                <button class="pc-action-btn quickview-btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="far fa-eye"></i></button>
+                <button class="pc-action-btn compare-btn" aria-label="Compare"><i class="fas fa-shuffle"></i></button>
+              </div>
+            </div>
+            <div class="pc-body">
+              <span class="pc-category">Home & Living</span>
+              <h3 class="pc-name"><a href="#">LumiGlow Smart Lamp</a></h3>
+              <div class="pc-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                <span>(210)</span>
+              </div>
+              <div class="pc-price-row">
+                <span class="pc-price">$59.00</span>
+                <span class="pc-old-price">$89.00</span>
+                <span class="pc-discount">-34%</span>
+              </div>
+              <button class="btn btn-cart w-100 mt-2" onclick="addToCart(this)">
+                <i class="fas fa-cart-plus me-2"></i> Add to Cart
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- 6 -->
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 product-item" data-cat="sports">
+          <article class="product-card" aria-label="FlexForce Resistance Kit">
+            <div class="pc-img-wrap">
+              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&q=80" alt="FlexForce Resistance Band Kit" loading="lazy" />
+              <div class="pc-actions">
+                <button class="pc-action-btn wishlist-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
+                <button class="pc-action-btn quickview-btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="far fa-eye"></i></button>
+                <button class="pc-action-btn compare-btn" aria-label="Compare"><i class="fas fa-shuffle"></i></button>
+              </div>
+            </div>
+            <div class="pc-body">
+              <span class="pc-category">Sports</span>
+              <h3 class="pc-name"><a href="#">FlexForce Resistance Kit</a></h3>
+              <div class="pc-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span>(1,089)</span>
+              </div>
+              <div class="pc-price-row">
+                <span class="pc-price">$34.00</span>
+                <span class="pc-old-price">$55.00</span>
+                <span class="pc-discount">-38%</span>
+              </div>
+              <button class="btn btn-cart w-100 mt-2" onclick="addToCart(this)">
+                <i class="fas fa-cart-plus me-2"></i> Add to Cart
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- 7 -->
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 product-item" data-cat="fashion">
+          <article class="product-card" aria-label="UrbanEdge Leather Jacket">
+            <div class="pc-img-wrap">
+              <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500&q=80" alt="UrbanEdge Leather Jacket" loading="lazy" />
+              <span class="pc-badge badge-hot">HOT</span>
+              <div class="pc-actions">
+                <button class="pc-action-btn wishlist-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
+                <button class="pc-action-btn quickview-btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="far fa-eye"></i></button>
+                <button class="pc-action-btn compare-btn" aria-label="Compare"><i class="fas fa-shuffle"></i></button>
+              </div>
+            </div>
+            <div class="pc-body">
+              <span class="pc-category">Fashion</span>
+              <h3 class="pc-name"><a href="#">UrbanEdge Leather Jacket</a></h3>
+              <div class="pc-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i>
+                <span>(654)</span>
+              </div>
+              <div class="pc-price-row">
+                <span class="pc-price">$179.00</span>
+                <span class="pc-old-price">$280.00</span>
+                <span class="pc-discount">-36%</span>
+              </div>
+              <button class="btn btn-cart w-100 mt-2" onclick="addToCart(this)">
+                <i class="fas fa-cart-plus me-2"></i> Add to Cart
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- 8 -->
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 product-item" data-cat="electronics">
+          <article class="product-card" aria-label="NexaTab Ultra 12">
+            <div class="pc-img-wrap">
+              <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=500&q=80" alt="NexaTab Ultra 12 Tablet" loading="lazy" />
+              <span class="pc-badge badge-sale">SALE</span>
+              <div class="pc-actions">
+                <button class="pc-action-btn wishlist-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
+                <button class="pc-action-btn quickview-btn" aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="far fa-eye"></i></button>
+                <button class="pc-action-btn compare-btn" aria-label="Compare"><i class="fas fa-shuffle"></i></button>
+              </div>
+            </div>
+            <div class="pc-body">
+              <span class="pc-category">Electronics</span>
+              <h3 class="pc-name"><a href="#">NexaTab Ultra 12</a></h3>
+              <div class="pc-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span>(445)</span>
+              </div>
+              <div class="pc-price-row">
+                <span class="pc-price">$449.00</span>
+                <span class="pc-old-price">$649.00</span>
+                <span class="pc-discount">-31%</span>
+              </div>
+              <button class="btn btn-cart w-100 mt-2" onclick="addToCart(this)">
+                <i class="fas fa-cart-plus me-2"></i> Add to Cart
+              </button>
+            </div>
+          </article>
+        </div>
+
+      </div>
+      <!-- /products-grid -->
+
+      <div class="text-center mt-5">
+        <a href="#shop" class="btn btn-outline-nexa btn-lg">View All Products <i class="fas fa-arrow-right ms-2"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BEST SELLERS CAROUSEL
+  ============================================================ -->
+  <section id="bestsellers" class="section-pad" aria-labelledby="bs-heading">
+    <div class="container-fluid px-4 px-lg-5">
+
+      <div class="section-header d-flex flex-wrap align-items-end justify-content-between mb-5 gap-3">
+        <div>
+          <span class="section-eyebrow">Trending now</span>
+          <h2 id="bs-heading" class="section-title mb-0">Best Sellers</h2>
+        </div>
+        <div class="carousel-controls d-flex gap-2">
+          <button class="carousel-ctrl-btn" data-bs-target="#bsCarousel" data-bs-slide="prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+          <button class="carousel-ctrl-btn" data-bs-target="#bsCarousel" data-bs-slide="next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <div id="bsCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row g-4">
+              <!-- bs product cards (compact horizontal layout) -->
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="bs-card">
+                  <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=200&q=80" alt="Running Shoes" loading="lazy" />
+                  <div class="bs-info">
+                    <span class="bs-rank">#1</span>
+                    <p class="bs-name">Velocity Boost Pro</p>
+                    <div class="bs-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="bs-price">$110 <s>$165</s></p>
+                    <button class="btn btn-cart-sm" onclick="addToCart(this)">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="bs-card">
+                  <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=200&q=80" alt="Perfume" loading="lazy" />
+                  <div class="bs-info">
+                    <span class="bs-rank">#2</span>
+                    <p class="bs-name">Noir Élite Perfume</p>
+                    <div class="bs-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                    <p class="bs-price">$75 <s>$120</s></p>
+                    <button class="btn btn-cart-sm" onclick="addToCart(this)">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="bs-card">
+                  <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?w=200&q=80" alt="Headphones" loading="lazy" />
+                  <div class="bs-info">
+                    <span class="bs-rank">#3</span>
+                    <p class="bs-name">BassZone Studio 50</p>
+                    <div class="bs-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i></div>
+                    <p class="bs-price">$95 <s>$150</s></p>
+                    <button class="btn btn-cart-sm" onclick="addToCart(this)">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="bs-card">
+                  <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=200&q=80" alt="Backpack" loading="lazy" />
+                  <div class="bs-info">
+                    <span class="bs-rank">#4</span>
+                    <p class="bs-name">TrailMaster Backpack</p>
+                    <div class="bs-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="bs-price">$68 <s>$110</s></p>
+                    <button class="btn btn-cart-sm" onclick="addToCart(this)">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row g-4">
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="bs-card">
+                  <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=200&q=80" alt="Camera" loading="lazy" />
+                  <div class="bs-info">
+                    <span class="bs-rank">#5</span>
+                    <p class="bs-name">InstaPro Cam 360</p>
+                    <div class="bs-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                    <p class="bs-price">$299 <s>$450</s></p>
+                    <button class="btn btn-cart-sm" onclick="addToCart(this)">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="bs-card">
+                  <img src="https://images.unsplash.com/photo-1588508065123-287b28e013da?w=200&q=80" alt="Laptop" loading="lazy" />
+                  <div class="bs-info">
+                    <span class="bs-rank">#6</span>
+                    <p class="bs-name">SwiftBook Air 15</p>
+                    <div class="bs-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i></div>
+                    <p class="bs-price">$999 <s>$1299</s></p>
+                    <button class="btn btn-cart-sm" onclick="addToCart(this)">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="bs-card">
+                  <img src="https://images.unsplash.com/photo-1560343090-f0409e92791a?w=200&q=80" alt="Sneakers" loading="lazy" />
+                  <div class="bs-info">
+                    <span class="bs-rank">#7</span>
+                    <p class="bs-name">CloudWalk Lite</p>
+                    <div class="bs-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="bs-price">$79 <s>$120</s></p>
+                    <button class="btn btn-cart-sm" onclick="addToCart(this)">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="bs-card">
+                  <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=200&q=80" alt="Water Bottle" loading="lazy" />
+                  <div class="bs-info">
+                    <span class="bs-rank">#8</span>
+                    <p class="bs-name">HydroVault 32oz</p>
+                    <div class="bs-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                    <p class="bs-price">$42 <s>$65</s></p>
+                    <button class="btn btn-cart-sm" onclick="addToCart(this)">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /carousel-inner -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SPECIAL OFFERS — COUNTDOWN TIMER
+  ============================================================ -->
+  <section id="offers" class="section-offers" aria-labelledby="offers-heading">
+    <div class="offers-bg-slash" aria-hidden="true"></div>
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row align-items-center g-5">
+
+        <div class="col-lg-5">
+          <span class="section-eyebrow light">Limited time</span>
+          <h2 id="offers-heading" class="section-title text-white mb-4">Flash Deal of the Day</h2>
+          <p class="text-white opacity-75 mb-4">Premium ProPulse SmartWatch X9 — our #1 best seller — at an all-time low. Offer ends when the timer hits zero.</p>
+
+          <!-- Countdown Timer -->
+          <div class="countdown" id="countdown" aria-label="Countdown timer">
+            <div class="cd-unit"><span id="cd-h">08</span><label>Hours</label></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-unit"><span id="cd-m">34</span><label>Mins</label></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-unit"><span id="cd-s">59</span><label>Secs</label></div>
+          </div>
+
+          <div class="d-flex align-items-center gap-4 mt-4 mb-5">
+            <div class="offer-price">
+              <span class="offer-new">$149</span>
+              <span class="offer-old">$399</span>
+              <span class="offer-save">Save $250 (63%)</span>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-primary-nexa btn-lg">Grab This Deal <i class="fas fa-bolt ms-2"></i></a>
+        </div>
+
+        <div class="col-lg-7 text-center offers-img-col">
+          <div class="offers-img-wrap">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=700&q=85" alt="ProPulse SmartWatch X9 offer" loading="lazy" />
+            <div class="offers-badge-float">63% OFF</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WHY CHOOSE US
+  ============================================================ -->
+  <section id="why-us" class="section-pad" aria-labelledby="why-heading">
+    <div class="container-fluid px-4 px-lg-5">
+
+      <div class="section-header text-center mb-5">
+        <span class="section-eyebrow">Our promise</span>
+        <h2 id="why-heading" class="section-title">Why Choose NexaShop?</h2>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="why-card" style="--why-color:#4F46E5">
+            <div class="why-icon"><i class="fas fa-truck-fast"></i></div>
+            <h3>Lightning Fast Shipping</h3>
+            <p>Free 2-day delivery on orders over $50. Same-day dispatch before 2PM.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="why-card" style="--why-color:#10B981">
+            <div class="why-icon"><i class="fas fa-shield-halved"></i></div>
+            <h3>Secure Payments</h3>
+            <p>256-bit SSL encryption. We accept Visa, Mastercard, PayPal, Apple Pay & more.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="why-card" style="--why-color:#F59E0B">
+            <div class="why-icon"><i class="fas fa-rotate-left"></i></div>
+            <h3>Hassle-Free Returns</h3>
+            <p>Changed your mind? Return any item within 30 days — no questions asked.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="why-card" style="--why-color:#EC4899">
+            <div class="why-icon"><i class="fas fa-headset"></i></div>
+            <h3>24/7 Support</h3>
+            <p>Real humans, not bots. Chat, email, or call us anytime — we've got your back.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CUSTOMER TESTIMONIALS
+  ============================================================ -->
+  <section id="testimonials" class="section-pad section-alt" aria-labelledby="testi-heading">
+    <div class="container-fluid px-4 px-lg-5">
+
+      <div class="section-header text-center mb-5">
+        <span class="section-eyebrow">Social proof</span>
+        <h2 id="testi-heading" class="section-title">What Our Customers Say</h2>
+        <p class="section-sub">Over 2 million satisfied shoppers worldwide trust NexaShop.</p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="testi-card">
+            <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testi-text">"The ProPulse watch exceeded every expectation. Shipping was insanely fast and the packaging felt genuinely premium. NexaShop is my go-to from now on."</p>
+            <div class="testi-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="Marcus T." loading="lazy" />
+              <div>
+                <strong>Marcus T.</strong>
+                <span>Verified Buyer · New York</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="testi-card testi-featured">
+            <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testi-text">"I was skeptical ordering online but the return policy sealed it for me. Ordered the leather jacket, loved it immediately. The quality is genuinely luxury-level."</p>
+            <div class="testi-author">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80" alt="Sofia R." loading="lazy" />
+              <div>
+                <strong>Sofia R.</strong>
+                <span>Verified Buyer · London</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="testi-card">
+            <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i></div>
+            <p class="testi-text">"Customer support resolved my sizing issue in under 5 minutes over chat. That kind of responsiveness is rare. Already ordered three more items this month!"</p>
+            <div class="testi-author">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&q=80" alt="Daniel K." loading="lazy" />
+              <div>
+                <strong>Daniel K.</strong>
+                <span>Verified Buyer · Toronto</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       NEWSLETTER
+  ============================================================ -->
+  <section id="newsletter" class="section-newsletter" aria-labelledby="nl-heading">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row justify-content-center text-center">
+        <div class="col-12 col-lg-7">
+          <span class="section-eyebrow light">Stay in the loop</span>
+          <h2 id="nl-heading" class="section-title text-white">Get 15% Off Your First Order</h2>
+          <p class="text-white opacity-75 mb-5">Subscribe for exclusive deals, new arrivals, and insider-only discounts. Zero spam, unsubscribe anytime.</p>
+
+          <form class="nl-form" role="search" onsubmit="handleNewsletterSubmit(event)">
+            <div class="nl-input-wrap">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Enter your email address" aria-label="Email address for newsletter" required />
+              <button type="submit">Subscribe &amp; Save</button>
+            </div>
+          </form>
+
+          <p class="nl-note">No spam. Unsubscribe anytime. <a href="#">Privacy Policy</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BRAND PARTNERS
+  ============================================================ -->
+  <section id="brands" class="section-pad brands-section" aria-labelledby="brands-heading">
+    <div class="container-fluid px-4 px-lg-5">
+
+      <div class="section-header text-center mb-5">
+        <span class="section-eyebrow">Our partners</span>
+        <h2 id="brands-heading" class="section-title">Trusted Brands</h2>
+      </div>
+
+      <!-- Scrolling marquee row -->
+      <div class="brands-track-wrap" aria-label="Brand logos">
+        <div class="brands-track">
+          <div class="brand-logo">SONY</div>
+          <div class="brand-logo">NIKE</div>
+          <div class="brand-logo">SAMSUNG</div>
+          <div class="brand-logo">APPLE</div>
+          <div class="brand-logo">ADIDAS</div>
+          <div class="brand-logo">BOSE</div>
+          <div class="brand-logo">CANON</div>
+          <div class="brand-logo">DYSON</div>
+          <!-- Duplicated for seamless loop -->
+          <div class="brand-logo" aria-hidden="true">SONY</div>
+          <div class="brand-logo" aria-hidden="true">NIKE</div>
+          <div class="brand-logo" aria-hidden="true">SAMSUNG</div>
+          <div class="brand-logo" aria-hidden="true">APPLE</div>
+          <div class="brand-logo" aria-hidden="true">ADIDAS</div>
+          <div class="brand-logo" aria-hidden="true">BOSE</div>
+          <div class="brand-logo" aria-hidden="true">CANON</div>
+          <div class="brand-logo" aria-hidden="true">DYSON</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer id="footer" aria-label="Site footer">
+    <div class="footer-top">
+      <div class="container-fluid px-4 px-lg-5">
+        <div class="row g-5">
+
+          <!-- Brand Column -->
+          <div class="col-12 col-lg-4">
+            <a class="footer-logo" href="index.html">
+              <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+              <span class="logo-text">Nexa<span class="logo-accent">Shop</span></span>
+            </a>
+            <p class="footer-desc">Premium products, transparent pricing, and a shopping experience built around you. Shop smarter with NexaShop.</p>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-badges mt-4">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Visa_2021.svg" alt="Visa accepted" height="28" loading="lazy" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/200px-Mastercard-logo.svg.png" alt="Mastercard accepted" height="28" loading="lazy" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/200px-PayPal.svg.png" alt="PayPal accepted" height="28" loading="lazy" />
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-6 col-md-3 col-lg-2">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#shop">Shop</a></li>
+              <li><a href="#featured">Products</a></li>
+              <li><a href="#offers">Deals</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Customer Service -->
+          <div class="col-6 col-md-3 col-lg-2">
+            <h4 class="footer-heading">Support</h4>
+            <ul class="footer-links">
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Track Order</a></li>
+              <li><a href="#">Wishlist</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Size Guide</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+
+          <!-- Policies -->
+          <div class="col-6 col-md-3 col-lg-2">
+            <h4 class="footer-heading">Policies</h4>
+            <ul class="footer-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Refund Policy</a></li>
+              <li><a href="#">Shipping Policy</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-6 col-md-3 col-lg-2" id="contact">
+            <h4 class="footer-heading">Get in Touch</h4>
+            <ul class="footer-contact">
+              <li><i class="fas fa-location-dot"></i> 340 Market St, San Francisco, CA 94102</li>
+              <li><i class="fas fa-phone"></i> <a href="tel:+18001234567">+1 800 123 4567</a></li>
+              <li><i class="fas fa-envelope"></i> <a href="mailto:hello@nexashop.com">hello@nexashop.com</a></li>
+              <li><i class="fas fa-clock"></i> Mon–Fri, 9AM – 6PM PT</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="container-fluid px-4 px-lg-5">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 text-center text-md-start">
+            <p>&copy; 2026 NexaShop. All rights reserved.</p>
+          </div>
+          <div class="col-12 col-md-6 text-center text-md-end">
+            <p>Made with <i class="fas fa-heart text-danger"></i> for shoppers everywhere.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       QUICK VIEW MODAL
+  ============================================================ -->
+  <div class="modal fade" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content qv-modal">
+        <button type="button" class="qv-close" data-bs-dismiss="modal" aria-label="Close quick view">
+          <i class="fas fa-xmark"></i>
+        </button>
+        <div class="row g-0">
+          <div class="col-md-6 qv-img-col">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=700&q=85" alt="ProPulse SmartWatch X9 detail view" />
+          </div>
+          <div class="col-md-6 qv-info-col">
+            <span class="pc-badge badge-hot d-inline-block mb-3">HOT</span>
+            <h2 id="quickViewModalLabel">ProPulse SmartWatch X9</h2>
+            <p class="qv-cat">Electronics / Wearables</p>
+            <div class="pc-rating mb-3">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i>
+              <span>4.5 · 1,204 reviews</span>
+            </div>
+            <div class="pc-price-row mb-4">
+              <span class="pc-price">$249.00</span>
+              <span class="pc-old-price">$399.00</span>
+              <span class="pc-discount">-38%</span>
+            </div>
+            <p class="qv-desc">Next-gen health tracking meets premium design. Heart rate, SpO2, GPS, sleep analysis, 7-day battery. Water-resistant to 50M. Compatible with iOS & Android.</p>
+            <div class="d-flex gap-3 mt-4">
+              <button class="btn btn-primary-nexa flex-grow-1" onclick="addToCart(this)"><i class="fas fa-cart-plus me-2"></i>Add to Cart</button>
+              <button class="btn btn-outline-nexa" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
+            </div>
+            <a href="#" class="qv-full-link mt-3 d-block">View Full Details <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       CART TOAST NOTIFICATION
+  ============================================================ -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 9999">
+    <div id="cartToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <i class="fas fa-cart-check text-success me-2"></i>
+        <strong class="me-auto">Added to Cart</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">Item successfully added to your cart!</div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- ============================================================
+       SCRIPTS
+  ============================================================ -->
+  <!-- Bootstrap 5 Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
